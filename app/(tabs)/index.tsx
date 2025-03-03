@@ -14,7 +14,7 @@ const index = () => {
         <Image
           source={require("@/assets/images/os/moya.png")}
           style={style.image}
-          contentFit='contain'
+          contentFit='cover'
           transition={1000}
         />
       </View>
@@ -33,13 +33,6 @@ const style = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-  },
-
-
-  StyleImagen : {
-    backgroundImage: '#008100',
-    alignSelf: 'auto',
-    resizeMode: 'cover',
   },
   image: {
     flex: 1,
