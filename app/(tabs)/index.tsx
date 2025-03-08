@@ -1,8 +1,11 @@
 import { Image } from 'expo-image'
-import { View, Text, useWindowDimensions, StyleSheet, ImageBackground, Pressable } from 'react-native'
+import { View, Text, useWindowDimensions, StyleSheet, ImageBackground, Pressable, Platform } from 'react-native'
 import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { rgbaColor } from 'react-native-reanimated/lib/typescript/Colors'
+import { navigate, push } from 'expo-router/build/global-state/routing'
+import { router } from 'expo-router'
+import Gremiales from '@/app/gremiales'
 
 //backgroundColor: "#008100"
 //source={image}
@@ -10,6 +13,8 @@ import { rgbaColor } from 'react-native-reanimated/lib/typescript/Colors'
 const index = () => {
   const { height, width } = useWindowDimensions();
   const image = {uri: 'https://js.desarrollosweb.net.ar/img/elevated-view-abstract-paper-background.jpg'}
+  
+  const imageGremial = Platform.OS !== 'ios' ? {uri: '@/assets/images/os/man_woman.png'} : "@/assets/images/os/man_woman.png"
   return (
     <SafeAreaView style={{ display: "flex", flex: 1 }}>
       <ImageBackground
@@ -28,11 +33,9 @@ const index = () => {
         </View>
 
         {/* Boton Gremiales */}
-
         <View style={style.ViewBody}>
 
-        <Pressable onPress={() => console.log("Gremiales")} style={style.Card}  >
-          <View  style={style.Card} >
+        <Pressable onPress={() => router.navigate('/gremiales')} style={style.Card}  >
             <Image
               source={require("@/assets/images/os/man_woman.png")}
               style={style.imagen}
@@ -40,14 +43,10 @@ const index = () => {
               transition={1000}
             />
             <Text style={style.texto}>GREMIALES</Text>
-
-          </View>
           </Pressable>
 
-
           {/* Boton Beneficios */}
-          <Pressable onPress={() => console.log("Beneficios")} style={style.Card}  >
-          <View  style={style.Card} >
+          <Pressable onPress={() => router.navigate('/gremiales')} style={style.Card}  >
             <Image
               source={require("@/assets/images/os/salud_woman.png")}
               style={style.imagen}
@@ -55,26 +54,8 @@ const index = () => {
               transition={1000}
             />
             <Text style={style.texto}>BENEFICIOS</Text>
-
-          </View>
           </Pressable>
 
-          {/* <View style={{ flex: 1, flexDirection: "column" }}>
-            <Image
-              source={require("@/assets/images/os/man_woman.png")}
-              style={style.imagen}
-              contentFit="contain"
-              transition={1000}
-            />
-            <Text style={style.texto}>GREMIALES</Text>
-            </View>
-
-          <Image
-            source={require("@/assets/images/os/salud_woman.png")}
-            style={style.imagen}
-            contentFit="contain"
-            transition={1000}
-          /> */}
         </View>
       </ImageBackground>
     </SafeAreaView>
@@ -103,18 +84,41 @@ const style = StyleSheet.create({
     backgroundColor: 'transparent',
     alignItems:'flex-start',
     gap: 1,
-    padding:10,
+    padding:5,
   },
   Card : {
      backgroundColor:'transparent',
      flex: 1,
-     height: '15%',
+     height: '30%',
      flexDirection:'column',
      borderRadius: 10,
      alignItems:'center',
      justifyContent: 'center',
+     paddingBottom:10, 
+     marginTop:20,
 
   },
+  imagen : {
+    backgroundColor: 'transparent',
+    display: "flex",
+    resizeMode: "contain",
+    justifyContent: "center",
+    width: '70%',
+    height: '70%',
+    marginBottom:1,
+  },
+  texto : {
+    marginTop:3,
+    borderStyle: 'dotted',
+    borderColor: 'white',
+    borderTopWidth: 1,
+    borderRightWidth: 0,  
+    borderLeftWidth: 0,
+    borderBottomWidth: 0, 
+    color: 'white',
+    letterSpacing:2,
+    fontSize: 14,
+   },
   ViewElements : {
     flex: 1,
      margin:0,
@@ -127,27 +131,7 @@ const style = StyleSheet.create({
       flexDirection:'row',
       gap: 10,
       padding:10,
-  },
-  imagen : {
-    backgroundColor: 'transparent',
-    display: "flex",
-    resizeMode: "contain",
-    justifyContent: "center",
-    width: '65%',
-    height: '65%',
-    marginBottom:1,
-  },
-  texto : {
-    marginTop:3,
-    borderStyle: 'dotted',
-    borderColor: 'white',
-    borderTopWidth: 1,
-    borderRightWidth: 0,  
-    borderLeftWidth: 0,
-    borderBottomWidth: 0, 
-    color: 'white',
-    letterSpacing:4,
-   }
+  }
   
 })
 
