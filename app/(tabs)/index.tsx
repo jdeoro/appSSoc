@@ -6,6 +6,7 @@ import { rgbaColor } from 'react-native-reanimated/lib/typescript/Colors'
 import { navigate, push } from 'expo-router/build/global-state/routing'
 import { router } from 'expo-router'
 import Gremiales from '@/app/gremiales'
+import BotonActions from '@/components/BotonActions'
 
 //backgroundColor: "#008100"
 //source={image}
@@ -46,7 +47,7 @@ const index = () => {
           </Pressable>
 
           {/* Boton Beneficios */}
-          <Pressable onPress={() => router.navigate('/gremiales')} style={style.Card}  >
+          {/* <Pressable onPress={() => router.navigate('/gremiales')} style={style.Card}  >
             <Image
               source={require("@/assets/images/os/salud_woman.png")}
               style={style.imagen}
@@ -54,7 +55,9 @@ const index = () => {
               transition={1000}
             />
             <Text style={style.texto}>BENEFICIOS</Text>
-          </Pressable>
+          </Pressable> */}
+
+          <BotonActions action ={() => router.navigate('/gremiales')} href = {"salud_woman.png"} title='BENEFICIOS' />
 
         </View>
       </ImageBackground>
@@ -103,8 +106,8 @@ const style = StyleSheet.create({
     display: "flex",
     resizeMode: "contain",
     justifyContent: "center",
-    width: '70%',
-    height: '70%',
+    width: '50%',
+    height: '50%',
     marginBottom:1,
   },
   texto : {
@@ -117,7 +120,7 @@ const style = StyleSheet.create({
     borderBottomWidth: 0, 
     color: 'white',
     letterSpacing:2,
-    fontSize: 14,
+    fontSize: 10,
    },
   ViewElements : {
     flex: 1,
