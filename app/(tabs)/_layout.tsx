@@ -25,14 +25,14 @@ export default function TabLayout() {
       <Tabs.Screen
         name="Aportes/index"
         options={{
-          title: 'Mis aportes',
-          tabBarIcon: ({ color }) => <Ionicons size={28} name='send-outline' color={color} />,
+          title: 'Obra social',
+          tabBarIcon: ({ color }) => <Ionicons size={28} name='heart-circle-outline' color={color} />,
         }}
       />
       <Tabs.Screen
         name="Carnet/index"
         options={{
-          title: 'Carnet',
+          title: 'Credencial obra social',
           tabBarIcon: ({ color }) => <Ionicons size={28} name="card-outline" color={color} />,
         }}
       />

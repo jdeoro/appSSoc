@@ -1,63 +1,42 @@
 import { Image } from 'expo-image'
-import { View, Text, useWindowDimensions, StyleSheet, ImageBackground, Pressable, Platform } from 'react-native'
+import { View, Text, useWindowDimensions, StyleSheet, ImageBackground, Pressable, Platform, PressableProps } from 'react-native'
 import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { rgbaColor } from 'react-native-reanimated/lib/typescript/Colors'
 import { navigate, NavigationOptions, push } from 'expo-router/build/global-state/routing'
 import { Href, RelativePathString, router } from 'expo-router'
 
-export interface Props extends NavigationOptions {
-    action : (href: Href, options?: NavigationOptions) => void
+export interface Props extends PressableProps {
     href : string
     title : string
 }
-//router.navigate('/gremiales')
-//require("@/assets/images/os/salud_woman.png")
 
-const BotonActions = ( { action,href,title} : Props ) => {
+const BotonActions = ( { href,title, ...rest} : Props ) => {
+
   return (
-        <Pressable onPress={() => action} style={style.Card}  >
-            <Image
-              source={require("@/assets/images/os/salud_woman.png")}
-              style={style.imagen}
-              contentFit="contain"
-              transition={1000}
-            />
-            <Text style={style.texto}>{title}</Text>
-          </Pressable>
-  )
+    <Pressable style={style.Card} {...rest}>
+      <Image
+        source={href}
+        style={style.imagen}
+        contentFit="contain"
+        transition={1000}
+      />
+      <Text style={style.texto}>{title}</Text>
+    </Pressable>
+  );
 }
 
 const style = StyleSheet.create({
-    ContainerBackgroundImage: {
-      flex: 1,
-      backgroundColor: 'green',    
-    },  
-    ViewHeader : {
-      flex: 1,
-       margin:0,
-       padding:0,
-       borderBottomWidth:2,
-       borderBottomColor:'white',
-    },
-    ViewBody : {
-      flex: 4,
-      flexDirection:'row',
-      backgroundColor: 'transparent',
-      alignItems:'flex-start',
-      gap: 1,
-      padding:5,
-    },
     Card : {
        backgroundColor:'transparent',
        flex: 1,
-       height: '30%',
+       height: '100%',
        flexDirection:'column',
        borderRadius: 10,
        alignItems:'center',
        justifyContent: 'center',
-       paddingBottom:10, 
-       marginTop:20,
+       paddingBottom:1, 
+       marginTop:5,
   
     },
     imagen : {
@@ -65,8 +44,8 @@ const style = StyleSheet.create({
       display: "flex",
       resizeMode: "contain",
       justifyContent: "center",
-      width: '50%',
-      height: '50%',
+      width: '70%',
+      height: '70%',
       marginBottom:1,
     },
     texto : {
@@ -81,19 +60,7 @@ const style = StyleSheet.create({
       letterSpacing:2,
       fontSize: 10,
      },
-    ViewElements : {
-      flex: 1,
-       margin:0,
-       padding:0,
-    },
-    ViewElements1 : {
-      flex: 4,
-       backgroundColor: 'transparent',
-       alignItems:'flex-start',
-        flexDirection:'row',
-        gap: 10,
-        padding:10,
-    }
+
     
   })
 
