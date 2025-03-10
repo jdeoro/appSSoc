@@ -32,7 +32,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="Carnet/index"
         options={{
-          title: 'Credencial obra social',
+          title: 'Credencial',
           tabBarIcon: ({ color }) => <Ionicons size={28} name="card-outline" color={color} />,
         }}
       />

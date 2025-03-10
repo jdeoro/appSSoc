@@ -20,7 +20,7 @@ const ThemedButton = ({ children, icon, ...rest }: Props) => {
       ]}
       {...rest}
     >
-      <Text style={{ color: 'white' }}>{children}</Text>
+      <Text style={{ color: 'black' }}>{children}</Text>
 
       {icon && (
         <Ionicons
@@ -37,6 +37,7 @@ export default ThemedButton;
 
 const styles = StyleSheet.create({
   button: {
+    backgroundColor: 'green',
     paddingHorizontal: 10,
     paddingVertical: 15,
     borderRadius: 5,

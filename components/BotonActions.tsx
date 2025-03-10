@@ -19,7 +19,6 @@ const BotonActions = ( { href,title, ...rest} : Props ) => {
         source={href}
         style={style.imagen}
         contentFit="contain"
-        transition={1000}
       />
       <Text style={style.texto}>{title}</Text>
     </Pressable>
@@ -49,6 +48,7 @@ const style = StyleSheet.create({
       marginBottom:1,
     },
     texto : {
+      flex: 1,
       marginTop:3,
       borderStyle: 'dotted',
       borderColor: 'white',
@@ -59,6 +59,9 @@ const style = StyleSheet.create({
       color: 'white',
       letterSpacing:2,
       fontSize: 10,
+      justifyContent: 'center',
+      textAlign: 'center',
+      
      },
 
     

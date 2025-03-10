@@ -12,20 +12,20 @@ const index = () => {
   const { height, width } = useWindowDimensions();
   const image = {uri: 'https://js.desarrollosweb.net.ar/img/elevated-view-abstract-paper-background.jpg'}
   
-  const imageGremial = Platform.OS !== 'ios' ? {uri: '@/assets/images/os/man_woman.png'} : "@/assets/images/os/man_woman.png"
+  //const imageGremial = Platform.OS !== 'ios' ? {uri: '@/assets/images/os/man_woman.png'} : "@/assets/images/os/man_woman.png"
   return (
     <SafeAreaView style={{ display: "flex", flex: 1 }}>
       <ImageBackground
         resizeMode="cover"
         style={style.ContainerBackgroundImage}
+        
       >
         {/* Header  */}
         <View style={style.ViewHeader}>
           <Image
-            source={require("@/assets/images/os/moya.png")}
-            style={{ flex: 1, backgroundColor: "rgba(0,0,0.03" }}
-            contentFit="fill"
-            transition={1000}
+            source={require("@/assets/images/os/moya-1.png")}
+            style={{ flex: 1, backgroundColor: "rgba(0,0,0" }}
+            contentFit="cover"
             contentPosition={{ top: 0, left: 0 }}
           />
         </View>
@@ -62,7 +62,7 @@ const index = () => {
           <BotonActions
             onPress={() => router.navigate("/gremiales")}
             href={require("@/assets/images/os/carnet_sindical.png")}
-            title="CARNET SINDICAL"
+            title="CARNET     " 
           />
 
           <BotonActions
@@ -81,7 +81,8 @@ const style = StyleSheet.create({
 
   ContainerBackgroundImage: {
     flex: 1,
-    backgroundColor: 'green',    
+    backgroundColor: '#144d14', 
+    backgroundImage: 'url(https://js.desarrollosweb.net.ar/img/elevated-view-abstract-paper-background.jpg)',   
   },  
   ViewHeader : {
     flex: 1,
