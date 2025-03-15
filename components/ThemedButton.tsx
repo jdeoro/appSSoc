@@ -20,13 +20,13 @@ const ThemedButton = ({ children, icon, ...rest }: Props) => {
       ]}
       {...rest}
     >
-      <Text style={{ color: 'black' }}>{children}</Text>
+      <Text style={{ color: '#000000' }}>{children}</Text>
 
       {icon && (
         <Ionicons
           name={icon}
           size={24}
-          color="white"
+          color="#ffffff"
           style={{ marginHorizontal: 5 }}
         />
       )}
@@ -37,12 +37,13 @@ export default ThemedButton;
 
 const styles = StyleSheet.create({
   button: {
-    backgroundColor: 'green',
+    display:'flex',
+    backgroundColor: '#00ff00',
     paddingHorizontal: 10,
     paddingVertical: 15,
     borderRadius: 5,
     alignItems: 'center',
-    flexDirection: 'row',
+    flexDirection: 'column',
     justifyContent: 'center',
   },
 });

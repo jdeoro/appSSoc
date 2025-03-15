@@ -109,7 +109,7 @@ const LoginScreen = () => {
 
         {/* Spacer */}
         <View style={{ marginTop: 10 }} />
-
+            
         {/* Botón */}
         <ThemedButton
           icon="arrow-forward-outline"
