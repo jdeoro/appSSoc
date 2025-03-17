@@ -1,22 +1,43 @@
 import { Image } from 'expo-image'
 import { View, Text, StyleSheet, Pressable } from 'react-native'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import ThemedButton from '@/components/ThemedButton'
 import { router } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
 import { ScrollView } from 'react-native-gesture-handler'
 import { FlipInEasyX } from 'react-native-reanimated'
+import data from '@/data/data.json'
+import { Idata } from '@/interfaces/interfaz-data'
+import HeaderconGlobo from '@/components/HeaderconGlobo'
+import BrowserButton from '@/components/BrowserButton'
 
 const Gremiales = () => {
+
+//  useEffect(() => {
+  
+//   const readLines = () => {
+//     data.registros.map( ( reg ) => (
+//       console.log(reg)  
+//     ))
+//   }
+
+//    readLines()
+
+//  }, [])
+ 
+  
 
   const salir = () => {
     router.replace('/(tabs)')
   }  
    
   return (
+
+
     <SafeAreaView style={style.Container}>
-      {/* BOTON */}
+
+      {/* BOTON back */}
       <Pressable style={style.button} onPress={salir}>
         <Ionicons
           name="arrow-back"
@@ -29,15 +50,9 @@ const Gremiales = () => {
 
 
       <ScrollView>
-      {/* IMAGEN */}
-      <View style={{ backgroundColor: "transparent", flex: 4,height:200 , marginBottom:40 }}>
-        <Image
-          source={require("@/assets/images/os/marcha-con-globo.png")}
-          style={style.imagenHeader}
-          contentFit="cover"
-          contentPosition={{ top: 0, left: 0 }}
-        />
-      </View>
+
+      {/* IMAGEN header */}
+      <HeaderconGlobo imgPath={"@/assets/images/os/marcha-con-globo.png"} />
 
         {/* TEXTO */}
         <View style={{ backgroundColor: "white", flex: 2 }}>
@@ -102,9 +117,19 @@ const Gremiales = () => {
 
           {/* SERVICIOS     */}
 
+           {
+             data.registros.map( (reg ) => (
+              <BrowserButton key={reg.interno} children={reg.titulo} img={{ imgPath: reg.interno }}  reg={reg } />
+             ))
+           }     
+
+
+          {/* {
+            <BrowserButton children='AGUAS Y GASEOSAS' img={{ imgPath: 'bebidas' }} />
+          }       */}
+
           {/* AGUAS Y GASEOSAS       */}
-          <View>
-            <Pressable style={{height:140, marginTop:50, marginHorizontal:40  , display:'flex', flexDirection:'row', alignItems:'center' ,justifyContent:'space-between', borderBottomWidth:1,borderBottomColor:'#aaaaaa' }}
+            {/* <Pressable style={{height:140, marginTop:50, marginHorizontal:40  , display:'flex', flexDirection:'row', alignItems:'center' ,justifyContent:'space-between', borderBottomWidth:1,borderBottomColor:'#aaaaaa' }}
               onPress={() => {
                 console.warn("presionado");
               }} 
@@ -116,12 +141,10 @@ const Gremiales = () => {
                 contentPosition={{ top: 0, left: 0 }}
               />
               <Text style={{ fontSize:11,color:'green',display:'flex', flex:1}}>AGUAS Y GASEOSAS</Text>
-            </Pressable>
-          </View>
+            </Pressable> */}
 
           {/* CAUDALES       */}
-          <View>
-            <Pressable style={{height:140, marginTop:20, marginHorizontal:40  , display:'flex', flexDirection:'row', alignItems:'center' ,justifyContent:'space-between', borderBottomWidth:1,borderBottomColor:'#aaaaaa' }}
+            {/* <Pressable style={{height:140, marginTop:20, marginHorizontal:40  , display:'flex', flexDirection:'row', alignItems:'center' ,justifyContent:'space-between', borderBottomWidth:1,borderBottomColor:'#aaaaaa' }}
               onPress={() => {
                 console.warn("presionado");
               }} 
@@ -133,12 +156,11 @@ const Gremiales = () => {
                 contentPosition={{ top: 0, left: 0 }}
               />
               <Text style={{ fontSize:11,color:'green',display:'flex', flex:1}}>CAUDALES</Text>
-            </Pressable>
-          </View>
+            </Pressable> */}
 
           {/* COMBUSTIBLES       */}
-          <View>
-            <Pressable style={{height:140, marginTop:20, marginHorizontal:40  , display:'flex', flexDirection:'row', alignItems:'center' ,justifyContent:'space-between', borderBottomWidth:1,borderBottomColor:'#aaaaaa' }}
+
+            {/* <Pressable style={{height:140, marginTop:20, marginHorizontal:40  , display:'flex', flexDirection:'row', alignItems:'center' ,justifyContent:'space-between', borderBottomWidth:1,borderBottomColor:'#aaaaaa' }}
               onPress={() => {
                 console.warn("presionado");
               }} 
@@ -150,12 +172,10 @@ const Gremiales = () => {
                 contentPosition={{ top: 0, left: 0 }}
               />
               <Text style={{ fontSize:11,color:'green',display:'flex', flex:1}}>COMBUSTIBLES</Text>
-            </Pressable>
-          </View>
+            </Pressable> */}
 
           {/* CORRALONES       */}
-          <View>
-            <Pressable style={{height:140, marginTop:20, marginHorizontal:40  , display:'flex', flexDirection:'row', alignItems:'center' ,justifyContent:'space-between', borderBottomWidth:1,borderBottomColor:'#aaaaaa' }}
+            {/* <Pressable style={{height:140, marginTop:20, marginHorizontal:40  , display:'flex', flexDirection:'row', alignItems:'center' ,justifyContent:'space-between', borderBottomWidth:1,borderBottomColor:'#aaaaaa' }}
               onPress={() => {
                 console.warn("presionado");
               }} 
@@ -167,8 +187,7 @@ const Gremiales = () => {
                 contentPosition={{ top: 0, left: 0 }}
               />
               <Text style={{ fontSize:11,color:'green',display:'flex', flex:1}}>CORRALONES</Text>
-            </Pressable>
-          </View>
+            </Pressable> */}
 
 
         </View>
