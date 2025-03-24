@@ -4,7 +4,7 @@ import React from 'react'
 const MisAportesIndex = () => {
   return (
     <View>
-      <Text>MisAportesIndex</Text>
+      <Text>Mis Aportes </Text>
     </View>
   )
 }

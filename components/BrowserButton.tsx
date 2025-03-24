@@ -20,6 +20,10 @@ interface Props extends PressableProps {
     descrip5: string;
     descrip6: string;
     descrip7: string;
+    descrip8: string;
+    descrip9: string;    
+    descrip10: string;
+    imagenglobo : string;     
 
   };
 }
@@ -92,7 +96,7 @@ const BrowserButton = ({ children, img, reg, ...rest }: Props) => {
         <View style={styles.ViewHeader}>
           <Image
             source={{
-              uri: "https://js.desarrollosweb.net.ar/img/ambulancia-con-globo-medio3.png",
+              uri: reg.imagenglobo,
             }}
             style={{ display:'flex', flex:1,backgroundColor:'white' }}
             contentFit="cover"
@@ -103,14 +107,18 @@ const BrowserButton = ({ children, img, reg, ...rest }: Props) => {
         {/* BODY DEL MODAL     */}
         <View  style={{ display:'flex' , flex:2 ,marginTop:0,position:'relative'}}>
           <Text style={{ fontWeight: "700", fontSize: 13,marginHorizontal:10, textTransform:'capitalize' }}> {reg.titulo}</Text>
-          <Text style={{ fontWeight: "500", fontSize: 9,marginHorizontal:10, textTransform:'capitalize' }}>{reg.descrip1.startsWith("1") ? bullet+" "+ reg.descrip1.substring(1): reg.descrip1.substring(0)}</Text>
-          <Text style={{ fontWeight: "500", fontSize: 9,marginHorizontal:10, textTransform:'capitalize' }}>{reg.descrip2.startsWith("1") ? bullet+" "+ reg.descrip2.substring(1): reg.descrip2.substring(0)}</Text>
-          <Text style={{ fontWeight: "500", fontSize: 9,marginHorizontal:10, textTransform:'capitalize' }}>{reg.descrip3.startsWith("1") ? bullet+" "+ reg.descrip3.substring(1): reg.descrip3.substring(0)}</Text>
-          <Text style={{ fontWeight: "500", fontSize: 9,marginHorizontal:10, textTransform:'capitalize' }}>{reg.descrip4.startsWith("1") ? bullet+" "+ reg.descrip4.substring(1): reg.descrip4.substring(0)}</Text>
-          <Text style={{ fontWeight: "500", fontSize: 9,marginHorizontal:10, textTransform:'capitalize' }}>{reg.descrip5.startsWith("1") ? bullet+" "+ reg.descrip5.substring(1): reg.descrip5.substring(0)}</Text>
-          <Text style={{ fontWeight: "500", fontSize: 9,marginHorizontal:10, textTransform:'capitalize' }}>{reg.descrip6.startsWith("1") ? bullet+" "+ reg.descrip6.substring(1): reg.descrip6.substring(0)}</Text>
-          <Text style={{ fontWeight: "500" , fontSize: 9,marginHorizontal:10, textTransform:'capitalize' }}>{reg.descrip7.startsWith("1") ? bullet+" "+ reg.descrip7.substring(1): reg.descrip7.substring(0)}</Text>
-
+          <Text style={{ fontWeight: "700", fontSize: 9,marginHorizontal:10, textTransform:'capitalize' }}>{reg.descrip1.startsWith("1") ? bullet+" "+ reg.descrip1.substring(1): reg.descrip1.substring(0)}</Text>
+          <Text style={{ fontWeight: "700", fontSize: 9,marginHorizontal:10, textTransform:'capitalize' }}>{reg.descrip2.startsWith("1") ? bullet+" "+ reg.descrip2.substring(1): reg.descrip2.substring(0)}</Text>
+          <Text style={{ fontWeight: "700", fontSize: 9,marginHorizontal:10, textTransform:'capitalize' }}>{reg.descrip3.startsWith("1") ? bullet+" "+ reg.descrip3.substring(1): reg.descrip3.substring(0)}</Text>
+          <Text style={{ fontWeight: "300", fontSize: 9,marginHorizontal:10, textTransform:'capitalize' }}>{reg.descrip4.startsWith("1") ? bullet+" "+ reg.descrip4.substring(1): reg.descrip4.substring(0)}</Text>
+          <Text style={{ fontWeight: "300", fontSize: 9,marginHorizontal:10, textTransform:'capitalize' }}>{reg.descrip5.startsWith("1") ? bullet+" "+ reg.descrip5.substring(1): reg.descrip5.substring(0)}</Text>
+          <Text style={{ fontWeight: "300", fontSize: 9,marginHorizontal:10, textTransform:'capitalize' }}>{reg.descrip6.startsWith("1") ? bullet+" "+ reg.descrip6.substring(1): reg.descrip6.substring(0)}</Text>
+          <Text style={{ fontWeight: "700" , fontSize: 9,marginHorizontal:10, textTransform:'capitalize' }}>{reg.descrip7.startsWith("1") ? bullet+" "+ reg.descrip7.substring(1): reg.descrip7.substring(0)}</Text>
+          <Text style={{ fontWeight: "700" , fontSize: 9,marginHorizontal:10, textTransform:'capitalize' }}>{reg.descrip8.startsWith("1") ? bullet+" "+ reg.descrip8.substring(1): reg.descrip8.substring(0)}</Text>
+          <Text style={{ fontWeight: "500" , fontSize: 9,marginHorizontal:10, textTransform:'capitalize' }}>{reg.descrip9.startsWith("1") ? bullet+" "+ reg.descrip9.substring(1): reg.descrip9.substring(0)}</Text>
+          <View style={{ display:'flex',  justifyContent:'space-between'}}>
+          <Text style={{ fontWeight: "500" , fontSize: 9,marginHorizontal:10, textTransform:'capitalize' }}>{reg.descrip10.startsWith("1") ? bullet+" "+ reg.descrip10.substring(1): reg.descrip10.substring(0)}</Text>
+          </View>
         </View>      
 
 

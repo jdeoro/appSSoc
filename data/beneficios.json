@@ -3,7 +3,7 @@
       {
         "img": "avatar-ambulancia-2.png",
         "titulo": "AMBULANCIA PROGRAMADA",
-        "interno": "1046",
+        "interno": "1775",
         "email": "",
         "descrip1" : "Para los pacientes que no pueden deambular por sus propios medios se puede solicitar una ambulancia 48hs. hábiles, antes del traslado.",
         "descrip2" : "                                                                                                                                      ",
@@ -11,7 +11,11 @@
         "descrip4" : "1orden médica en la cual se indique desde y hasta donde debe ser trasladado el paciente.",
         "descrip5" : "1El paciente deberá ser acompañado por un familiar mayor de edad sin excepción.",
         "descrip6" : "                                                                                                                                      ",
-        "descrip7" : "2NO ES UN SERVICIO DE EMERGENCIAS."
+        "descrip7" : "NO ES UN SERVICIO DE EMERGENCIAS.",
+        "descrip8" : "",
+        "descrip9" : "CONSULTAS",
+        "descrip10": "Tel.(011) 4378-0000",
+        "imagenglobo" : "https://js.desarrollosweb.net.ar/img/ambulancia-con-globo-medio3.png" 
 
     },
       {
@@ -19,13 +23,17 @@
         "titulo": "ASESORAMIENTO ACCIDENTES DEL TRABAJO",
         "interno": "1047",
         "email": "rama.caudales@camioneros-ba.org.ar",
-        "descrip1" : "Para los pacientes que no pueden deambular por sus propios medios se puede solicitar una ambulancia 48hs. hábiles, antes del traslado.",
-        "descrip2" : "Requisitos:",
-        "descrip3" : "orden médica en la cual se indique desde y hasta donde debe ser trasladado el paciente",
-        "descrip4" : "El paciente deberá ser acompañado por un familiar mayor de edad sin excepción",
-        "descrip5" : "NO ES UN SERVICIO DE EMERGENCIAS",
-        "descrip6" : "",
-        "descrip7" : "CONSULTAS"
+        "descrip1" : "EL Sindicato brinda asesoramiento por accidentes laborales, enfermedades profesionales en forma gratuita a los afiliados.",
+        "descrip2" : "Ante cualquier accidente laboral o notificación  de la empresa.",
+        "descrip3" : "asesorate con los abogados del Sindicato.",
+        "descrip4" : "",
+        "descrip5" : "CONSULTAS",
+        "descrip6" : "Secretaría de accidenntes y enfermedades profesionales.",
+        "descrip7" : "Tel.(011) 4378-0000",
+        "descrip8" : "Abogado:Martes y jueves de 14 a 17hs.",
+        "descrip9" : "Medico: martes y jueves de 10 a 13hs.",
+        "descrip10": "",
+        "imagenglobo" : "https://js.desarrollosweb.net.ar/img/acc-trabajo-con-globo-medio.png" 
 
       },
       {
@@ -39,7 +47,11 @@
         "descrip4" : "El paciente deberá ser acompañado por un familiar mayor de edad sin excepción",
         "descrip5" : "NO ES UN SERVICIO DE EMERGENCIAS",
         "descrip6" : "CONSULTAS",
-        "descrip7" : "CONSULTAS"
+        "descrip7" : "CONSULTAS",
+        "descrip8" : "3CONSULTAS.",
+        "descrip9" : "",
+        "descrip10": "Tel.(011) 4378-0000",
+        "imagenglobo" : "https://js.desarrollosweb.net.ar/img/ambulancia-con-globo-medio3.png" 
       },
       {
         "img": "avatar-asesor-juridico-1.png",
@@ -52,7 +64,11 @@
         "descrip4" : "El paciente deberá ser acompañado por un familiar mayor de edad sin excepción",
         "descrip5" : "NO ES UN SERVICIO DE EMERGENCIAS",
         "descrip6" : "CONSULTAS",
-        "descrip7" : "CONSULTAS"
+        "descrip7" : "CONSULTAS",
+        "descrip8" : "3CONSULTAS.",
+        "descrip9" : "",
+        "descrip10": "Tel.(011) 4378-0000",
+        "imagenglobo" : "https://js.desarrollosweb.net.ar/img/ambulancia-con-globo-medio3.png" 
       },
       {
         "img": "avatar-asesor-salarial-1.png",
@@ -65,7 +81,11 @@
         "descrip4" : "El paciente deberá ser acompañado por un familiar mayor de edad sin excepción",
         "descrip5" : "NO ES UN SERVICIO DE EMERGENCIAS",
         "descrip6" : "CONSULTAS",
-        "descrip7" : "CONSULTAS"
+        "descrip7" : "CONSULTAS",
+        "descrip8" : "3CONSULTAS.",
+        "descrip9" : "",
+        "descrip10": "Tel.(011) 4378-0000",
+        "imagenglobo" : "https://js.desarrollosweb.net.ar/img/ambulancia-con-globo-medio3.png" 
       },
       {
         "img": "avatar-beca-estudiantil-1.png",
@@ -78,7 +98,11 @@
         "descrip4" : "El paciente deberá ser acompañado por un familiar mayor de edad sin excepción",
         "descrip5" : "NO ES UN SERVICIO DE EMERGENCIAS",
         "descrip6" : "CONSULTAS",
-        "descrip7" : "CONSULTAS"
+        "descrip7" : "CONSULTAS",
+        "descrip8" : "3CONSULTAS.",
+        "descrip9" : "",
+        "descrip10": "Tel.(011) 4378-0000",
+        "imagenglobo" : "https://js.desarrollosweb.net.ar/img/ambulancia-con-globo-medio3.png" 
       },
       {
         "img": "avatar-beca-enfermeria-1.png",
@@ -91,7 +115,11 @@
         "descrip4" : "El paciente deberá ser acompañado por un familiar mayor de edad sin excepción",
         "descrip5" : "NO ES UN SERVICIO DE EMERGENCIAS",
         "descrip6" : "CONSULTAS",
-        "descrip7" : "CONSULTAS"
+        "descrip7" : "CONSULTAS",
+        "descrip8" : "3CONSULTAS.",
+        "descrip9" : "",
+        "descrip10": "Tel.(011) 4378-0000",
+        "imagenglobo" : "https://js.desarrollosweb.net.ar/img/ambulancia-con-globo-medio3.png" 
       },
       {
         "img": "avatar-biblioteca-1.png",
@@ -104,7 +132,11 @@
         "descrip4" : "El paciente deberá ser acompañado por un familiar mayor de edad sin excepción",
         "descrip5" : "NO ES UN SERVICIO DE EMERGENCIAS",
         "descrip6" : "CONSULTAS",
-        "descrip7" : "CONSULTAS"
+        "descrip7" : "CONSULTAS",
+        "descrip8" : "3CONSULTAS.",
+        "descrip9" : "",
+        "descrip10": "Tel.(011) 4378-0000",
+        "imagenglobo" : "https://js.desarrollosweb.net.ar/img/ambulancia-con-globo-medio3.png" 
       },
       {
         "img": "avatar-camping-1.png",
@@ -117,7 +149,11 @@
         "descrip4" : "El paciente deberá ser acompañado por un familiar mayor de edad sin excepción",
         "descrip5" : "NO ES UN SERVICIO DE EMERGENCIAS",
         "descrip6" : "CONSULTAS",
-        "descrip7" : "CONSULTAS"
+        "descrip7" : "CONSULTAS",
+        "descrip8" : "3CONSULTAS.",
+        "descrip9" : "",
+        "descrip10": "Tel.(011) 4378-0000",
+        "imagenglobo" : "https://js.desarrollosweb.net.ar/img/ambulancia-con-globo-medio3.png" 
       },
       {
         "img": "avatar-curso-capacitacion-2.png",
@@ -130,7 +166,11 @@
         "descrip4" : "El paciente deberá ser acompañado por un familiar mayor de edad sin excepción",
         "descrip5" : "NO ES UN SERVICIO DE EMERGENCIAS",
         "descrip6" : "CONSULTAS",
-        "descrip7" : "CONSULTAS"
+        "descrip7" : "CONSULTAS",
+        "descrip8" : "3CONSULTAS.",
+        "descrip9" : "",
+        "descrip10": "Tel.(011) 4378-0000",
+        "imagenglobo" : "https://js.desarrollosweb.net.ar/img/ambulancia-con-globo-medio3.png" 
       },
       {
         "img": "avatar-deportes-1.png",
@@ -143,7 +183,11 @@
         "descrip4" : "El paciente deberá ser acompañado por un familiar mayor de edad sin excepción",
         "descrip5" : "NO ES UN SERVICIO DE EMERGENCIAS",
         "descrip6" : "CONSULTAS",
-        "descrip7" : "CONSULTAS"
+        "descrip7" : "CONSULTAS",
+        "descrip8" : "3CONSULTAS.",
+        "descrip9" : "",
+        "descrip10": "Tel.(011) 4378-0000",
+        "imagenglobo" : "https://js.desarrollosweb.net.ar/img/ambulancia-con-globo-medio3.png" 
       },
       {
         "img": "avatar-discapacidad-2.png",
@@ -156,7 +200,11 @@
         "descrip4" : "El paciente deberá ser acompañado por un familiar mayor de edad sin excepción",
         "descrip5" : "NO ES UN SERVICIO DE EMERGENCIAS",
         "descrip6" : "CONSULTAS",
-        "descrip7" : "CONSULTAS"
+        "descrip7" : "CONSULTAS",
+        "descrip8" : "3CONSULTAS.",
+        "descrip9" : "",
+        "descrip10": "Tel.(011) 4378-0000",
+        "imagenglobo" : "https://js.desarrollosweb.net.ar/img/ambulancia-con-globo-medio3.png" 
       },
       {
         "img": "avatar-mutual-camioneros-4.png",
@@ -169,7 +217,11 @@
         "descrip4" : "El paciente deberá ser acompañado por un familiar mayor de edad sin excepción",
         "descrip5" : "NO ES UN SERVICIO DE EMERGENCIAS",
         "descrip6" : "CONSULTAS",
-        "descrip7" : "CONSULTAS"
+        "descrip7" : "CONSULTAS",
+        "descrip8" : "3CONSULTAS.",
+        "descrip9" : "",
+        "descrip10": "Tel.(011) 4378-0000",
+        "imagenglobo" : "https://js.desarrollosweb.net.ar/img/ambulancia-con-globo-medio3.png" 
       },
       {
         "img": "avatar-nacimiento-2.png",
@@ -182,7 +234,11 @@
         "descrip4" : "El paciente deberá ser acompañado por un familiar mayor de edad sin excepción",
         "descrip5" : "NO ES UN SERVICIO DE EMERGENCIAS",
         "descrip6" : "CONSULTAS",
-        "descrip7" : "CONSULTAS"
+        "descrip7" : "CONSULTAS",
+        "descrip8" : "3CONSULTAS.",
+        "descrip9" : "",
+        "descrip10": "Tel.(011) 4378-0000",
+        "imagenglobo" : "https://js.desarrollosweb.net.ar/img/ambulancia-con-globo-medio3.png" 
       },
       {
         "img": "avatar-subsidio-falle-2.png",
@@ -195,7 +251,11 @@
         "descrip4" : "El paciente deberá ser acompañado por un familiar mayor de edad sin excepción",
         "descrip5" : "NO ES UN SERVICIO DE EMERGENCIAS",
         "descrip6" : "CONSULTAS",
-        "descrip7" : "CONSULTAS"
+        "descrip7" : "CONSULTAS",
+        "descrip8" : "3CONSULTAS.",
+        "descrip9" : "",
+        "descrip10": "Tel.(011) 4378-0000",
+        "imagenglobo" : "https://js.desarrollosweb.net.ar/img/ambulancia-con-globo-medio3.png" 
       },
       {
         "img": "avatar-utiles-escolares-2.png",
@@ -208,7 +268,11 @@
         "descrip4" : "El paciente deberá ser acompañado por un familiar mayor de edad sin excepción",
         "descrip5" : "NO ES UN SERVICIO DE EMERGENCIAS",
         "descrip6" : "CONSULTAS",
-        "descrip7" : "CONSULTAS"
+        "descrip7" : "CONSULTAS",
+        "descrip8" : "3CONSULTAS.",
+        "descrip9" : "",
+        "descrip10": "Tel.(011) 4378-0000",
+        "imagenglobo" : "https://js.desarrollosweb.net.ar/img/ambulancia-con-globo-medio3.png" 
       },
       {
         "img": "avatar-vacaciones--chicos-2.png",
@@ -221,7 +285,11 @@
         "descrip4" : "El paciente deberá ser acompañado por un familiar mayor de edad sin excepción",
         "descrip5" : "NO ES UN SERVICIO DE EMERGENCIAS",
         "descrip6" : "CONSULTAS",
-        "descrip7" : "CONSULTAS"
+        "descrip7" : "CONSULTAS",
+        "descrip8" : "3CONSULTAS.",
+        "descrip9" : "",
+        "descrip10": "Tel.(011) 4378-0000",
+        "imagenglobo" : "https://js.desarrollosweb.net.ar/img/ambulancia-con-globo-medio3.png" 
       },
       {
         "img": "avatar-vacaciones-familiares-2.png",
@@ -234,7 +302,11 @@
         "descrip4" : "El paciente deberá ser acompañado por un familiar mayor de edad sin excepción",
         "descrip5" : "NO ES UN SERVICIO DE EMERGENCIAS",
         "descrip6" : "CONSULTAS",
-        "descrip7" : "CONSULTAS"
+        "descrip7" : "CONSULTAS",
+        "descrip8" : "3CONSULTAS.",
+        "descrip9" : "",
+        "descrip10": "Tel.(011) 4378-0000",
+        "imagenglobo" : "https://js.desarrollosweb.net.ar/img/ambulancia-con-globo-medio3.png" 
       },
       {
         "img": "avatar-vaca-jub-2.png",
@@ -247,7 +319,11 @@
         "descrip4" : "El paciente deberá ser acompañado por un familiar mayor de edad sin excepción",
         "descrip5" : "NO ES UN SERVICIO DE EMERGENCIAS",
         "descrip6" : "CONSULTAS",
-        "descrip7" : "CONSULTAS"
+        "descrip7" : "CONSULTAS",
+        "descrip8" : "3CONSULTAS.",
+        "descrip9" : "",
+        "descrip10": "Tel.(011) 4378-0000",
+        "imagenglobo" : "https://js.desarrollosweb.net.ar/img/ambulancia-con-globo-medio3.png" 
       },
       {
         "img": "avatar-viaje-boda-2.png",
@@ -260,7 +336,11 @@
         "descrip4" : "El paciente deberá ser acompañado por un familiar mayor de edad sin excepción",
         "descrip5" : "NO ES UN SERVICIO DE EMERGENCIAS",
         "descrip6" : "CONSULTAS",
-        "descrip7" : "CONSULTAS"
+        "descrip7" : "CONSULTAS",
+        "descrip8" : "3CONSULTAS.",
+        "descrip9" : "",
+        "descrip10": "Tel.(011) 4378-0000",
+        "imagenglobo" : "https://js.desarrollosweb.net.ar/img/ambulancia-con-globo-medio3.png" 
       }
     ]
   }

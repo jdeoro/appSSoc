@@ -1,6 +1,5 @@
-import { Image } from 'expo-image'
 import { View, Text, StyleSheet, Pressable } from 'react-native'
-import React, { useEffect } from 'react'
+import React  from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { router } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
@@ -35,14 +34,12 @@ const Beneficios = () => {
 
         {/* TEXTO */}
         <View style={{ backgroundColor: "white", flex: 2 }}>
-          {/* SERVICIOS     */}
-
+          {/* LISTADO DE LOS SERVICIOS  */}
            {
              data.registros.map( (reg ) => (
               <BrowserButton key={reg.interno} children={reg.titulo} img={{ imgPath: reg.interno }}  reg={reg } />
              ))
            }     
-
         </View>
       </ScrollView>
     </SafeAreaView>

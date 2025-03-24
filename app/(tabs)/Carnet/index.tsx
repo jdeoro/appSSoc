@@ -4,7 +4,7 @@ import React from 'react'
 export default function IndexCarnet() {
   return (
     <View>
-      <Text>IndexCarnet</Text>
+      <Text>Opcion credenciales</Text>
     </View>
   )
 }

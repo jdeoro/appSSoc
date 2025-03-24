@@ -4,7 +4,7 @@ import React from 'react'
 const Settingindex = () => {
   return (
     <View>
-      <Text>Settingindex</Text>
+      <Text>Opcion Setting</Text>
     </View>
   )
 }
