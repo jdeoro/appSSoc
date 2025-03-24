@@ -38,7 +38,7 @@ const index = () => {
           />
 
           <BotonActions
-            onPress={() => router.navigate("/gremiales")}
+            onPress={() => router.navigate("/beneficios")}
             href={require("@/assets/images/os/salud_woman.png")}
             title="BENEFICIOS"
           />

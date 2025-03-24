@@ -4,49 +4,57 @@
       "img": "bebidas.png",
       "titulo": "AGUAS y GASEOSAS",
       "interno": "1030",
-      "email": "rama.aguas@camioneros-ba.org.ar"
+      "email": "rama.aguas@camioneros-ba.org.ar",
+      "ifmodal" : true
     },
     {
       "img": "caudales.png",
       "titulo": "CAUDALES",
       "interno": "1031",
-      "email": "rama.caudales@camioneros-ba.org.ar"
+      "email": "rama.caudales@camioneros-ba.org.ar",
+      "ifmodal" : true
     },
     {
       "img": "combustibles.png",
       "titulo": "COMBUSTIBLES",
       "interno": "1032",
-      "email": "rama.combustible@camioneros-ba.org.ar"
+      "email": "rama.combustible@camioneros-ba.org.ar",
+      "ifmodal" : true
     },
     {
       "img": "corralones.png",
       "titulo": "CORRALONES",
       "interno": "1033",
-      "email": "rama.corralon@camioneros-ba.org.ar"
+      "email": "rama.corralon@camioneros-ba.org.ar",
+      "ifmodal" : true
     },
     {
       "img": "avatar-email.png",
       "titulo": "CORREO",
       "interno": "1034",
-      "email": "rama.email@camioneros-ba.org.ar"
+      "email": "rama.email@camioneros-ba.org.ar",
+      "ifmodal" : true
     },
     {
       "img": "kiosco.png",
       "titulo": "DIARIOS Y REVISTAS",
       "interno": "1035",
-      "email": "rama.kiosco@camioneros-ba.org.ar"
+      "email": "rama.kiosco@camioneros-ba.org.ar",
+      "ifmodal" : true
     },
     {
       "img": "expresos-mudanzas.png",
       "titulo": "EXPRESOS Y MUDANZAS",
       "interno": "1036",
-      "email": "rama.mudanza@camioneros-ba.org.ar"
+      "email": "rama.mudanza@camioneros-ba.org.ar",
+      "ifmodal" : true
     },
     {
       "img": "lacteos.png",
       "titulo": "LACTEOS",
       "interno": "1037",
-      "email": "rama.lacteos@camioneros-ba.org.ar"
+      "email": "rama.lacteos@camioneros-ba.org.ar",
+      "ifmodal" : true
     },
     {
       "img": "larga-distancia.png",
@@ -58,43 +66,50 @@
       "img": "lavaderos-industriales.png",
       "titulo": "LAVADEROS INDUSTRIALES",
       "interno": "1039",
-      "email": "rama.lowndryt@camioneros-ba.org.ar"
+      "email": "rama.lowndryt@camioneros-ba.org.ar",
+      "ifmodal" : true
     },
     {
       "img": "logistica.png",
       "titulo": "LOGISTICA",
       "interno": "1040",
-      "email": "rama.logis@camioneros-ba.org.ar"
+      "email": "rama.logis@camioneros-ba.org.ar",
+      "ifmodal" : true
     },
     {
       "img": "grua.png",
       "titulo": "MECANICOS",
       "interno": "1041",
-      "email": "rama.mecanicos@camioneros-ba.org.ar"
+      "email": "rama.mecanicos@camioneros-ba.org.ar",
+      "ifmodal" : true
     },
     {
       "img": "transporte-pesado.png",
       "titulo": "PESADOS",
       "interno": "1042",
-      "email": "rama.pesado@camioneros-ba.org.ar"
+      "email": "rama.pesado@camioneros-ba.org.ar",
+      "ifmodal" : true
     },
     {
       "img": "productos-refrigerados.png",
       "titulo": "PRODUCTOS REFRIGERADOS",
       "interno": "1043",
-      "email": "rama.refrigerado@camioneros-ba.org.ar"
+      "email": "rama.refrigerado@camioneros-ba.org.ar",
+      "ifmodal" : true
     },
     {
       "img": "recoleccion-basura.png",
       "titulo": "RECOLECCION",
       "interno": "1044",
-      "email": "rama.recoleccion@camioneros-ba.org.ar"
+      "email": "rama.recoleccion@camioneros-ba.org.ar",
+      "ifmodal" : true
     },
     {
       "img": "residuos-industriales.png",
       "titulo": "RESIDUOS INDUSTRIALES",
       "interno": "1045",
-      "email": "rama.residuos@camioneros-ba.org.ar"
+      "email": "rama.residuos@camioneros-ba.org.ar",
+      "ifmodal" : true
     }
   ]
 }

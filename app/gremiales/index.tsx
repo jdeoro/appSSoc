@@ -10,7 +10,8 @@ import { FlipInEasyX } from 'react-native-reanimated'
 import data from '@/data/data.json'
 import { Idata } from '@/interfaces/interfaz-data'
 import HeaderconGlobo from '@/components/HeaderconGlobo'
-import BrowserButton from '@/components/BrowserButton'
+import BrowserButtoModal from '@/components/BrowserButtoModal';
+
 
 const Gremiales = () => {
 
@@ -119,7 +120,7 @@ const Gremiales = () => {
 
            {
              data.registros.map( (reg ) => (
-              <BrowserButton key={reg.interno} children={reg.titulo} img={{ imgPath: reg.interno }}  reg={reg } />
+              <BrowserButtoModal key={reg.interno} children={reg.titulo} img={{ imgPath: reg.interno }}  reg={reg } />
              ))
            }     
 
