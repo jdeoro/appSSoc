@@ -6,6 +6,7 @@ import { SecureStorageAdapter } from '@/middelware/secure-storage.adapter';
 export type AuthStatus = 'authenticated' | 'unauthenticated' | 'checking';
 
 export interface AuthState {
+  
   //property
   status: AuthStatus;
   token?: string;

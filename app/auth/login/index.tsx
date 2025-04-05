@@ -11,8 +11,8 @@ import {
   Text,
 } from "react-native";
 
-import {  router } from "expo-router";
-import { Image } from 'expo-image'
+import { router } from "expo-router";
+import { Image } from "expo-image";
 import ThemedButton from "@/components/ThemedButton";
 import ThemedLink from "@/components/ThemedLink";
 import { ThemedText } from "@/components/ThemedText";
@@ -32,7 +32,6 @@ const LoginScreen = () => {
     email: "",
     password: "",
   });
-
 
   const onLogin = async () => {
     const { email, password } = form;
@@ -57,17 +56,15 @@ const LoginScreen = () => {
 
   return (
     <KeyboardAvoidingView behavior="padding" style={{ flex: 1 }}>
-
-<View style={style.ViewHeader}>
-          <Image
-           source={require("@/assets/images/os/moya.png")}
-           style={{ flex: 1, backgroundColor: "transparent" }}
-           contentFit="fill"
-           transition={1000}
-           contentPosition={{ top: 0, left: 0 }}           
-           />
-        </View>
-
+      <View style={style.ViewHeader}>
+        <Image
+          source={require("@/assets/images/os/moya.png")}
+          style={{ flex: 1, backgroundColor: "transparent" }}
+          contentFit="fill"
+          transition={1000}
+          contentPosition={{ top: 0, left: 0 }}
+        />
+      </View>
 
       <ScrollView
         style={{
@@ -109,7 +106,7 @@ const LoginScreen = () => {
 
         {/* Spacer */}
         <View style={{ marginTop: 10 }} />
-            
+
         {/* Botón */}
         <ThemedButton
           icon="arrow-forward-outline"
@@ -137,7 +134,7 @@ const LoginScreen = () => {
           <ThemedText>¿No tienes cuenta?</ThemedText>
 
           <ThemedLink href="/auth/register" style={{ marginHorizontal: 5 }}>
-            Crear cuenta
+            {"Crear cuenta"}
           </ThemedLink>
         </View>
       </ScrollView>
@@ -146,35 +143,33 @@ const LoginScreen = () => {
 };
 
 const style = StyleSheet.create({
-
   ContainerBackgroundImage: {
     flex: 1,
-    backgroundColor: 'green',    
-  },  
-  ViewHeader : {
-    flex: 1,
-     margin:0,
-     padding:0,
-     borderBottomWidth:2,
-     borderBottomColor:'white',
+    backgroundColor: "green",
   },
-  ViewBody : {
+  ViewHeader: {
     flex: 1,
-    flexDirection:'row',
-    backgroundColor: 'transparent',
-    alignItems:'flex-start',
+    margin: 0,
+    padding: 0,
+    borderBottomWidth: 2,
+    borderBottomColor: "white",
+  },
+  ViewBody: {
+    flex: 1,
+    flexDirection: "row",
+    backgroundColor: "transparent",
+    alignItems: "flex-start",
     gap: 1,
-    padding:5,
+    padding: 5,
   },
-  imagen : {
-    backgroundColor: 'transparent',
+  imagen: {
+    backgroundColor: "transparent",
     display: "flex",
     resizeMode: "contain",
     justifyContent: "center",
-    width: '70%',
-    height: '70%',
+    width: "70%",
+    height: "70%",
   },
-  
-})
+});
 
 export default LoginScreen;

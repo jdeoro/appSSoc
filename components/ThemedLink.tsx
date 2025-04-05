@@ -1,9 +1,11 @@
 import { Link, LinkProps } from 'expo-router';
 import { useThemeColor } from '../hooks/useThemeColor';
 
-interface Props extends LinkProps<string | object> {}
+interface Props extends LinkProps {
+  children?: React.ReactNode; // Agrega esta línea
+}
 
-const ThemedLink = ({ style, ...rest }: Props) => {
+const ThemedLink = ({ style, children, ...rest }: Props) => {
   const primaryColor = useThemeColor({}, 'primary');
 
   return (
@@ -15,7 +17,10 @@ const ThemedLink = ({ style, ...rest }: Props) => {
         style,
       ]}
       {...rest}
-    />
+    >
+      {children} {/* Incluye el children aquí */}
+    </Link>
   );
 };
+
 export default ThemedLink;

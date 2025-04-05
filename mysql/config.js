@@ -5,7 +5,7 @@ const poolcnx = createPool({
   user: "root",
   password: "9521",
   port: "3306",
-  database: "quepedimos",
+  database: "quepedimos1",
 });
 
 export { poolcnx };

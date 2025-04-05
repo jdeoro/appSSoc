@@ -2,8 +2,8 @@ import axios from 'axios';
 import { SecureStorageAdapter } from '@/middelware/secure-storage.adapter';
 import { Platform } from 'react-native';
 
-const STAGE = process.env.EXPO_PUBLIC_STAGE || 'dev';
- export const API_URL =process.env.EXPO_PUBLIC_API_URL
+ const STAGE = process.env.EXPO_PUBLIC_STAGE || 'dev';
+ export const API_URL = process.env.EXPO_PUBLIC_API_URL || 'https://api.desarrollosweb.net.ar'
 
 // export const API_URL =
 //   STAGE === 'prod'

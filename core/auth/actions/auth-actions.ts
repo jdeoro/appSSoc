@@ -13,7 +13,7 @@ export interface AuthResponse {
 
 const returnUserToken = ( data: AuthResponse  ): { user: User; token: string; ok: boolean } => {
   const { id, email, fullName, isActive, roles, token , ok } = data;
-
+  //console.warn(data)
   const user: User = { id, email, fullName, isActive, roles,  };
 
   return {
@@ -25,13 +25,13 @@ const returnUserToken = ( data: AuthResponse  ): { user: User; token: string; ok
 
 export const authLogin = async (email: string, pas: string) => {
   email = email.toLowerCase();
-
+  
   try {
     const { data } = await productsApi.post<AuthResponse>('/login', { email, pas, });
 
     return returnUserToken(data);
   } catch (error) {
-    console.log(error);
+    //console.log(error);
     // throw new Error('User and/or password not valid');
     return null;
   }
