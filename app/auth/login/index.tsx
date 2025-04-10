@@ -91,7 +91,7 @@ const LoginScreen = () => {
             autoCapitalize="none"
             icon="mail-outline"
             value={form.email}
-            onChangeText={(value) => setForm({ ...form, email: value })}
+            onChangeText={value => setForm({ ...form, email: value })}
           />
 
           <ThemedTextInput
@@ -100,7 +100,7 @@ const LoginScreen = () => {
             autoCapitalize="none"
             icon="lock-closed-outline"
             value={form.password}
-            onChangeText={(value) => setForm({ ...form, password: value })}
+            onChangeText={value => setForm({ ...form, password: value })}
           />
         </View>
 

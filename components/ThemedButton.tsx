@@ -16,7 +16,6 @@ const ThemedButton = ({ children, icon, ...rest }: Props) => {
         {
           backgroundColor: pressed ? primaryColor + '90' : primaryColor,
         },
-        styles.button,
       ]}
       {...rest}
     >
@@ -38,10 +37,10 @@ export default ThemedButton;
 const styles = StyleSheet.create({
   button: {
     display:'flex',
-    backgroundColor: '#00ff00',
-    paddingHorizontal: 10,
+    paddingHorizontal: 20,
     paddingVertical: 15,
     borderRadius: 5,
+    textTransform:'uppercase',
     alignItems: 'center',
     flexDirection: 'column',
     justifyContent: 'center',

@@ -12,7 +12,6 @@ import { Idata } from '@/interfaces/interfaz-data'
 import HeaderconGlobo from '@/components/HeaderconGlobo'
 import BrowserButtoModal from '@/components/BrowserButtoModal';
 
-
 const Gremiales = () => {
 
 //  useEffect(() => {
@@ -27,14 +26,11 @@ const Gremiales = () => {
 
 //  }, [])
  
-  
-
   const salir = () => {
     router.replace('/(tabs)')
   }  
    
   return (
-
 
     <SafeAreaView style={style.Container}>
 

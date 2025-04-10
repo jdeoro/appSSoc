@@ -1,7 +1,11 @@
 export interface User {
-  id: string;
-  email: string;
-  fullName: string;
-  isActive: boolean;
-  roles: string[];
+  ok: boolean;
+  token: string;
+  msg: string;
+  data : {
+    fullname : string;
+    id: number
+    role: number;
+    afiliado : string;
+  } 
 }

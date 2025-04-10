@@ -2,24 +2,34 @@ import { productsApi } from '../api/productsApi';
 import { User } from '../interface/user';
 
 export interface AuthResponse {
-  id: string;
-  email: string;
-  fullName: string;
-  isActive: boolean;
-  roles: string[];
   token: string;
   ok : boolean;
+  msg : string
+  data : {
+    fullname : string;
+    id: number
+    role: number;
+    afiliado : string;
+  }
 }
 
-const returnUserToken = ( data: AuthResponse  ): { user: User; token: string; ok: boolean } => {
-  const { id, email, fullName, isActive, roles, token , ok } = data;
-  //console.warn(data)
-  const user: User = { id, email, fullName, isActive, roles,  };
+const returnUserToken = ( data: AuthResponse  ): { user: User } => {
+  const { token , ok , msg,data : datos} = data;
+  console.log("returnUserToken.data:", datos,ok,msg,token)
+  const user: User = {
+      msg,  ok, token,
+    data: {
+      fullname: datos.fullname,
+      id: datos.id,
+      role: datos.role,
+      afiliado: datos.afiliado,
+    }
+  };
 
+  console.log("user:",user)
+//data.data.afiliado
   return {
     user,
-    token,
-    ok,
   };
 };
 
@@ -28,7 +38,8 @@ export const authLogin = async (email: string, pas: string) => {
   
   try {
     const { data } = await productsApi.post<AuthResponse>('/login', { email, pas, });
-
+ 
+    console.log("DATA=", data)
     return returnUserToken(data);
   } catch (error) {
     //console.log(error);
@@ -42,7 +53,7 @@ export const authRegister = async (email: string, pas: string , fullname : strin
 
   try {
     const { data } = await productsApi.post<AuthResponse>('/register', { email,pas, fullname });
-    console.log(data)
+
     return returnUserToken(data);
     
   } catch (error) {
@@ -51,8 +62,6 @@ export const authRegister = async (email: string, pas: string , fullname : strin
     return null;
   }
 };
-
-
 
 export const authCheckStatus = async () => {
   try {
