@@ -32,23 +32,23 @@ const Settingindex = () => {
         </ThemedText>
         <View>
           <ThemedText style={{ marginTop: 20, color: "gray", fontSize: 12 }}>
-            Nº AFILIADO: <span style={{ fontWeight: "bold" }}>{afiliado}</span>
+            Nº AFILIADO: <Text style={{ fontWeight: "bold" }}>{afiliado}</Text>
           </ThemedText>
           <ThemedText style={{ marginTop: 20, color: "gray", fontSize: 12 }}>
             NOMBRE Y APELLIDO:{" "}
-            <span style={{ fontWeight: "bold" }}>
+            <Text style={{ fontWeight: "bold" }}>
               {apellido} {nombre}
-            </span>
+            </Text>
           </ThemedText>
           <ThemedText style={{ marginTop: 20, color: "gray", fontSize: 12 }}>
-            DIRECCION: <span style={{ fontWeight: "bold" }}>{domicilio} {localidad} {codpos}</span>
+            DIRECCION: <Text style={{ fontWeight: "bold" }}>{domicilio} {localidad} {codpos}</Text>
           </ThemedText>
           <ThemedText style={{ marginTop: 20, color: "gray", fontSize: 12 }}>
-            DOCUMENTO: <span style={{ fontWeight: "bold" }}>{descrip} {nrodoc}</span>
+            DOCUMENTO: <Text style={{ fontWeight: "bold" }}>{descrip} {nrodoc}</Text>
           </ThemedText>
 
           <ThemedText style={{ marginTop: 20, color: "gray", fontSize: 12 }}>
-            Tel.: <span style={{ fontWeight: "bold" }}>{tel} </span>
+            Tel.: <Text style={{ fontWeight: "bold" }}>{tel} </Text>
           </ThemedText>
 
         </View>
