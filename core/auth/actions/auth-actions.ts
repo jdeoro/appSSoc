@@ -10,6 +10,18 @@ export interface AuthResponse {
     id: number
     role: number;
     afiliado : string;
+    apellido : string;
+    codpos: string;
+    domicilio: string;
+    descripcion: string;
+    estado: string;
+    fecnac: string;
+    localidad: string;
+    nombre: string;
+    nrodoc: string;
+    sexo: string;
+    tel: string;
+    descrip:string
   }
 }
 
@@ -23,6 +35,18 @@ const returnUserToken = ( data: AuthResponse  ): { user: User } => {
       id: datos.id,
       role: datos.role,
       afiliado: datos.afiliado,
+      apellido: datos.apellido,
+      codpos: datos.codpos,
+      domicilio: datos.domicilio,
+      descripcion: datos.descripcion, 
+      estado: datos.estado,
+      fecnac: datos.fecnac,
+      localidad: datos.localidad,
+      nombre: datos.nombre,
+      nrodoc: datos.nrodoc, 
+      sexo: datos.sexo,
+      tel: datos.tel,
+      descrip: datos.descrip, 
     }
   };
 
