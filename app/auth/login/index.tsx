@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   ActivityIndicator,
   Alert,
@@ -19,13 +19,15 @@ import { ThemedText } from "@/components/ThemedText";
 import ThemedTextInput from "@/components/ThemedTextInput";
 import { useThemeColor } from "@/hooks/useThemeColor";
 import { useAuthStore } from "@/core/auth/store/useAuthStore";
+import { authCheckStatus } from "@/core/auth/actions/auth-actions";
 
 const LoginScreen = () => {
-  const { login, token } = useAuthStore();
+  const { estado,login, token ,checkStatus } = useAuthStore();
 
   const { height } = useWindowDimensions();
   const backgroundColor = useThemeColor({}, "background");
 
+ 
   // se utiliza para que una vez que llama al login, deja 'disable' el boton ingresar.
   const [isPosting, setIsPosting] = useState(false);
   const [form, setForm] = useState({
@@ -33,6 +35,7 @@ const LoginScreen = () => {
     password: "",
   });
 
+    
   const onLogin = async () => {
     const { email, password } = form;
 

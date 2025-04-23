@@ -1,13 +1,26 @@
 import { Ionicons, MaterialIcons } from '@expo/vector-icons';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
-import { Tabs } from 'expo-router';
-import React from 'react';
+import { Redirect, Tabs } from 'expo-router';
+import React, { useEffect } from 'react';
 import { Button, Platform } from 'react-native';
 import { Colors } from '@/constants/Colors';
 import { useColorScheme } from '@/hooks/useColorScheme';
+import { authCheckStatus } from '@/core/auth/actions/auth-actions';
+import { useAuthStore } from '@/core/auth/store/useAuthStore';
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
+  
+  // useEffect(() => {
+  //   authCheckStatus()
+   
+  // }, [])
+
+  // const { user} = useAuthStore()
+  
+  // if (!user)
+  //   return <Redirect href='/auth/login' />
+
 
   return (
     <Tabs screenOptions={{ tabBarActiveTintColor: "green" }}>

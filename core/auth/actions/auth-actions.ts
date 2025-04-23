@@ -27,7 +27,9 @@ export interface AuthResponse {
 
 const returnUserToken = ( data: AuthResponse  ): { user: User } => {
   const { token , ok , msg,data : datos} = data;
+  
   console.log("returnUserToken.data:", datos,ok,msg,token)
+
   const user: User = {
       msg,  ok, token,
     data: {
@@ -89,9 +91,10 @@ export const authRegister = async (email: string, pas: string , fullname : strin
 
 export const authCheckStatus = async () => {
   try {
-    const { data } = await productsApi.get<AuthResponse>('/auth/check-status');
-
+    const { data } = await productsApi.get<AuthResponse>('/check-status');
+    console.log("authCheckStatus.data:", data)
     return returnUserToken(data);
+
   } catch (error) {
     return null;
   }

@@ -10,7 +10,8 @@ import BotonActions from '@/components/BotonActions'
 
 const index = () => {
   const { height, width } = useWindowDimensions();
-  const image = {uri: 'https://js.desarrollosweb.net.ar/img/elevated-view-abstract-paper-background.jpg'}
+  
+  //const image = {uri: 'https://js.desarrollosweb.net.ar/img/elevated-view-abstract-paper-background.jpg'}
   
   //const imageGremial = Platform.OS !== 'ios' ? {uri: '@/assets/images/os/man_woman.png'} : "@/assets/images/os/man_woman.png"
   return (
